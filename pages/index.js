@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Head from "next/head";
 import { useEffect, useContext, useState } from "react";
 import { Inter } from "next/font/google";
 import Link from "next/link";
@@ -62,7 +63,9 @@ export default function Home() {
     allDetailsFilled();
   }, [currentUser.currentUser]);
 
-  return (
+  return (<>
+    <Head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8301852433987995"
+     crossorigin="anonymous"></script></Head>
     <main className={`flex min-h-screen flex-col ${inter.className}`}>
       <div>
         <header className="nav">
@@ -347,6 +350,7 @@ export default function Home() {
         </div>
       </div>
     </main>
+                        </>
   );
 }
 //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
